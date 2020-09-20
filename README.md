@@ -66,3 +66,18 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `yarn build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+### how to use
+
+Airport choose is component which provide Button and Dropdown list
+input = data type JSON (required data which will bind to dropdown list)
+onAirportSelection type function (optional which will get selected Airport)
+dropdown use virtualization concept which means oon particular time it will render only 10 item on dom and on scroll it will bring rest of item
+on selection of item it will display airport name on drop down header.
+it use modular css component which will make sure no css conflict.
+example
+<AirportChooser data={data}></AirportChooser>
+<AirportChooser
+          data={data}
+          onAirportSelection={onAirportSelection}
+        ></AirportChooser>

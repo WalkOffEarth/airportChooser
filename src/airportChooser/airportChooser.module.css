@@ -1,0 +1,87 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 100px;
+}
+
+.btnChooseAirports {
+    width: 150px;
+    height: 30px;
+}
+
+.container button {
+    margin-bottom: 10px;
+}
+
+.ddHeader {
+    display: block;
+    height: 30px;
+    background-color: lightgray;
+    cursor: pointer;
+    padding: 10px 0 0 10px
+}
+
+.arrow {
+    border: 1px solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    float: right;
+    margin: 8px;
+
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+
+.listContainer {
+    position: absolute;
+    width: 100%;
+    top: 50px;
+    background-color: white;
+}
+
+.listContainer>div {
+    border-right: 1px soild gray;
+    height: 200px;
+    width: 100%
+}
+
+.listItem {
+    display: flex;
+}
+
+.listItem>div {
+    width: 20%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 5px 5px 5px 0;
+}
+
+.listItem:nth-child(n) {
+    background-color: #fff;
+}
+
+.listItem:nth-child(2n) {
+    background-color: rgb(211, 211, 211);
+}
+
+.listItem:hover {
+    background-color: rgba(0, 0, 0);
+    color: white;
+    cursor: pointer;
+
+}
+
+.listItem>div:first-child {
+    width: 35%;
+}
