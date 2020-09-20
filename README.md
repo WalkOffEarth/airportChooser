@@ -81,3 +81,8 @@ example
           data={data}
           onAirportSelection={onAirportSelection}
         ></AirportChooser>
+        
+### project Use
+git clone
+yarn
+yarn start
